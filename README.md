@@ -1,6 +1,21 @@
 # Ближайшие бары
 
-[FIXME. Здесь будет описание проекта]
+Этот скрипт получает файл с данными в json формате от data.mos.ru, после находит самый большой и маленкие бары, а также ближайший бар от координат введенным пользовательем и выводит их в консоль.
+
+# Как использовать
+
+```python
+
+import bars
+
+json_content = load_data(r'd:\PythonScript\Devman\bars.json')
+big_bars = get_biggest_bar(json_content)
+smallest_bars = get_smallest_bar(json_content)
+latitude = input('Введите координаты latitude: ')
+longitude = input('Введите координаты longitude: ')
+get_closest_bar(json_content, latitude, longitude) 
+
+```
 
 # Как запустить
 
