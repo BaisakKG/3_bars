@@ -18,7 +18,7 @@ def print_bars(bar_attributes):
     print('Адрес: ', bar_attributes['Address'])
     print('Количество мест: ', bar_attributes['SeatsCount'])
     print('Телефон: ', bar_attributes['PublicPhone'][0]['PublicPhone'])
-    print('*****************************************************************************')
+    print('**************************************************************')
     
 def get_biggest_bar(json_content):
     max_seats = (max(get_seats(json_content)))
@@ -30,7 +30,7 @@ def get_biggest_bar(json_content):
 
 def get_smallest_bar(json_content):
     min_seats = (min(get_seats(json_content)))
-    print('************************** Smallest bar ***********************')
+    print('************************ Smallest bar ************************')
     for bar_count in range(len(json_content['features'])):
         if json_content['features'][bar_count]['properties']['Attributes']['SeatsCount'] == min_seats: 
             bar_attributes = json_content['features'][bar_count]['properties']['Attributes']
