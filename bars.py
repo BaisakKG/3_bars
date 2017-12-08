@@ -64,8 +64,8 @@ if __name__ == '__main__':
     json_content = load_data(r'd:\PythonScript\Devman\bars.json')
     big_bars = get_biggest_bar(json_content)
     smallest_bars = get_smallest_bar(json_content)
-    # latitude = input('Введите координаты latitude: ')
-    # longitude = input('Введите координаты longitude: ')
-    # get_closest_bar(json_content, latitude, longitude)    
+    latitude = input('Введите координаты latitude: ')
+    longitude = input('Введите координаты longitude: ')
+    get_closest_bar(json_content, latitude, longitude)    
 
 
